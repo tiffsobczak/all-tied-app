@@ -1,0 +1,26 @@
+{
+  "name": "datingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "seeds": "node seeds/index.js",
+    "schema": "node db/schema.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.16.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
