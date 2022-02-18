@@ -1,11 +1,6 @@
 // import all models
 const Profile = require('./Profile');
 
+// no need for associations
 
-// TODO: Create appropriate associations?
-// User.hasMany(Post, {
-//   foreignKey: 'user_id'
-// });
-
-
-module.exports = {Profile};
+module.exports = { Profile };

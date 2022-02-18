@@ -1,26 +1,41 @@
 {
   "name": "datingapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "friend matching app",
   "main": "server.js",
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js",
     "schema": "node db/schema.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfrugo/datingapp.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "express",
+    "handlebars"
+  ],
+  "author": "Alfredo Diez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alfrugo/datingapp/issues"
+  },
+  "homepage": "https://github.com/Alfrugo/datingapp#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
-    "mysql2": "^2.1.0",
+    "mysql2": "^2.3.3",
     "sequelize": "^6.16.1"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^27.5.1"
   }
 }

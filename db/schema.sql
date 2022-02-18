@@ -1,5 +1,3 @@
--- DROP DATABASE
-DROP DATABASE IF EXISTS dating_app_db;
--- CREATE DATABASE
-CREATE DATABASE dating_app_db;
+DROP DATABASE IF EXISTS matchfeed_db;
 
+CREATE DATABASE matchfeed_db;
