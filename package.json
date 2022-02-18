@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js",
-    "schema": "node db/schema.js"
+    "schema": "node db/schema.js",
+    "reinitialize_db": "mysql < db/schema.sql"
   },
   "repository": {
     "type": "git",
