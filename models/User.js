@@ -58,7 +58,13 @@ User.init(
         contact: {
             type: DataTypes.STRING,
             allowNull: false,
-        } 
+        },
+        url: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
+
+        
     },
     {
         hooks: {
