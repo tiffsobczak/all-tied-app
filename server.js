@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // need to set up controllers
-app.use(require('./controllers/'));
+// app.use(require('./controllers/'));
 
 
 
