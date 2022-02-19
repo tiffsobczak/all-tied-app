@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       .then(dbProfileData => {
         const profiles = dbProfileData.map(post => post.get({ plain: true }));
         // pass a single post object into the homepage template
-        res.render('homepage', {profiles});
+        res.render('homepage', { profiles });
       })
       .catch(err => {
         console.log(err);

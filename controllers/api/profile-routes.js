@@ -58,18 +58,22 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
-  User.create({
+
+  // need to pass the rest of the profile values since we are only using ONE table/model
+
+  Profile.create({
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
     bio: req.body.bio,
     age: req.body.age,
     shift: req.body.shift,
+    contact: req.body.contact,
     imageurl: req.body.imageurl
   })
     .then(dbProfileData => {
       req.session.save(() => {
-        req.session.user_id = dbProfileData.id;
+        req.session.profile_id = dbProfileData.id;
         req.session.username = dbProfileData.username;
         req.session.loggedIn = true;
 
@@ -78,6 +82,7 @@ router.post('/', (req, res) => {
     })
     .catch(err => {
       console.log(err);
+      console.log('error on create user')
       res.status(500).json(err);
     });
 });
@@ -102,11 +107,11 @@ router.post('/login', (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.user_id = dbProfileData.id;
+      req.session.profile_id = dbProfileData.id;
       req.session.username = dbProfileData.username;
       req.session.loggedIn = true;
 
-      res.json({ user: dbProfileData, message: 'You are now logged in!' });
+      res.json({ profile: dbProfileData, message: 'You are now logged in!' });       ////// SHOULD THIS BE PROFILE??
     });
   });
 });
