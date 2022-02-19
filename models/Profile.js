@@ -3,7 +3,8 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class Profile extends Model {
-    checkPasword(loginPw){
+    checkPassword(loginPw){
+        console.log(loginPw, this.password)
         return bcrypt.compareSync(loginPw, this.password)
     }
 }
@@ -71,6 +72,7 @@ Profile.init(
           // set up beforeCreate lifecycle "hook" functionality
           async beforeCreate(newProfileData) {
             newProfileData.password = await bcrypt.hash(newProfileData.password, 10);
+            console.log(newProfileData.password)
             return newProfileData;
           },
     
