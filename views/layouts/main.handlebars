@@ -1,31 +1,55 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Tied Up 📆</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Tied Up 📆</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<body>
-  <div class="wrapper">
-    <header>
-    <h1>
-      <a href="/">All Tied Up 📆</a>
-    </h1>
-    <nav>
-      <a href="/login">Click here to get started!</a>
-    </nav>
-  </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
+  </head>
 
-</body>
+  <body>
+    <div class="wrapper">
+      <nav>
+
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">All Tied Up 📆</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{!-- <li><a href="/login">Login</a></li> --}}
+
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container">
+
+        {{{body}}}
+      </main>
+      <footer class="container">
+        Thanks for visiting!
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() { 
+        var modalElems = document.querySelectorAll('.modal'); 
+        var instances = M.Modal.init(modalElems);
+        var selectElems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(selectElems);
+        
+      });
+      
+    </script>
+  </body>
 
 </html>
