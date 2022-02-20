@@ -19,7 +19,7 @@
     "express",
     "handlebars"
   ],
-  "author": "Alfredo Diez",
+  "authors": ["Alfredo Diez", "Tiffany Sobczak"] ,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Alfrugo/datingapp/issues"
