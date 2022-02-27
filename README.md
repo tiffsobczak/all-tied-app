@@ -1,6 +1,6 @@
-# TiedUp
+# All Tied App
 
-![Screenshot (11)](https://user-images.githubusercontent.com/93059565/147293033-5726fcb8-d4d1-4de5-9c25-135c795e4d76.png)
+
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ Go to the repository and clone it to the directory that you would like to have i
 
 ## Questions
 
-If you have any questions regarding the application contact either one of us by email...
+If you have any questions regarding the application contact us by email...
 
 * moizzy89@gmail.com
 * adiez@mtm-inc.net
