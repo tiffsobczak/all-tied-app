@@ -19,7 +19,8 @@ A UI that allows you to search locally for potential friends with similar attrib
 
 ## Usage
 
-Go to the repository and clone it to the directory that you would like to have it in. Open the index.html in the default browser and run the application!
+Clone the repository to the directory you would like it to be in. Open the index.html in the default browser and run the application!
+Heroku Link: https://immense-caverns-04136.herokuapp.com/
 
 ## Contributors
 
