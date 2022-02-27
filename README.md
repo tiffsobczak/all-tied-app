@@ -1,6 +1,7 @@
 # All Tied App
 
-
+## Screenshot
+![All Tied App Homescreen](./all-tied-app.png)
 
 ## Table of Contents
 
