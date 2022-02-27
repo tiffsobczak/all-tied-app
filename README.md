@@ -1,7 +1,7 @@
 # All Tied App
 
 ## Screenshot
-![All Tied App Homescreen](./images/all-tied-app.png)
+![All Tied App Homescreen](./public/images/all-tied-app.png)
 
 ## Table of Contents
 
